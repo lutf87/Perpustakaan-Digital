@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#F1F6B5"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/books2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#C62FB7F6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Buku"
+                    android:textColor="#834C3B"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/judul_baru"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan Judul Buku..."
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:textColorHint="@color/white"
+                        android:backgroundTint="#00337FF1"
+                        android:inputType="textPersonName"
+                        android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#C62FB7F6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Author"
+                    android:textColor="#834C3B"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/author_baru"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan Nama Author..."
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:textColorHint="#F3EFEF"
+                        android:backgroundTint="#00337FF1"
+                        android:layout_gravity="center"
+                        android:inputType="textPersonName"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#C62FB7F6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tahun Terbit"
+                    android:textColor="#834C3B"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tahun_baru"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#00337FF1"
+                        android:hint="Masukkan Tahun Terbit Buku...."
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#C62FB7F6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Harga"
+                    android:textColor="#834C3B"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"/>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/harga_baru"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Masukkan Harga Buku..."
+                        android:textColor="#FBFBFB"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:textColorHint="@color/white"
+                        android:backgroundTint="#00337FF1"
+                        android:layout_gravity="center"
+                        android:inputType="number"/>
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/appCompatButtonUpdate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#337FF1"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>

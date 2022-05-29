@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "816345779199",
+    "project_id": "adminperpus-37f20",
+    "storage_bucket": "adminperpus-37f20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816345779199:android:d7a1dd7e0636fb041bf5ca",
+        "android_client_info": {
+          "package_name": "com.kuning.perpus2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816345779199-bggfj7iq4oobs0t0fgfrp8qlhqtg5s5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi9n3v7vg_YgDQ-z6dFHtOUlZrI8-tdTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816345779199-bggfj7iq4oobs0t0fgfrp8qlhqtg5s5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
