@@ -1,4 +1,22 @@
 <resources>
-    <string name="app_name">Perpus2</string>
+    <string name="app_name">Perpustakaan Digital</string>
     <string name="judul">Perpus Digital</string>
+    <string name="ed_judul">Judul Buku</string>
+    <string name="ed_masukkan_judul">Masukkan Judul Buku</string>
+    <string name="ed_author">Author</string>
+    <string name="ed_masukkan_author">Masukkan Nama Author</string>
+    <string name="ed_tahun">Tahun Terbit</string>
+    <string name="ed_masukkan_tahun">Masukkan Tahun Terbit Buku</string>
+    <string name="ed_harga">Harga</string>
+    <string name="ed_masukkan_harga">Masukkan Harga Buku</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_add">Add</string>
+    <string name="iv_logo">logo</string>
+    <string name="colon">:</string>
+    <string name="btn_delete">Delete</string>
+    <string name="gender_author">Gender Author</string>
+    <string name="rb_laki_laki">Laki Laki</string>
+    <string name="rb_perempuan">Perempuan</string>
+    <string name="jenkel">Jenkel</string>
+    <string name="hobi">Hobi</string>
 </resources>

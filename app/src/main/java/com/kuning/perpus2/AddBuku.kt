@@ -5,14 +5,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
+import android.widget.RadioButton
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.kuning.perpus2.databinding.ActivityAddBukuBinding
 import kotlinx.android.synthetic.main.activity_add_buku.*
 import kotlinx.android.synthetic.main.list_buku.*
 
 class AddBuku : AppCompatActivity(), View.OnClickListener {
+
+    private lateinit var binding: ActivityAddBukuBinding
 
     private var auth: FirebaseAuth? = null
     private val RC_SIGN_IN = 1
@@ -20,11 +24,13 @@ class AddBuku : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_buku)
+        binding = ActivityAddBukuBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         supportActionBar!!.title = "Tambah Buku"
 
         appCompatButtonAdd.setOnClickListener(this)
         auth = FirebaseAuth.getInstance()
+
 
     }
 

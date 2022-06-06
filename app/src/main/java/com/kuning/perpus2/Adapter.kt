@@ -1,21 +1,17 @@
 package com.kuning.perpus2
 
 import android.annotation.SuppressLint
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.kuning.perpus2.databinding.ListBukuBinding
 
 class Adapter(private var list_book: ArrayList<Books>, context: Context):
 RecyclerView.Adapter<Adapter.ViewHolder>() {
@@ -23,7 +19,7 @@ RecyclerView.Adapter<Adapter.ViewHolder>() {
     private var context: Context
     private var db: DatabaseReference? = null
 
-    inner class  ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
+    inner class  ViewHolder(val binding: ListBukuBinding): RecyclerView.ViewHolder(binding.root){
         val Judul: TextView
         val Author: TextView
         val Tahun: TextView
@@ -31,6 +27,7 @@ RecyclerView.Adapter<Adapter.ViewHolder>() {
         val ListItem: LinearLayout
         val ButtonUp: Button
         val ButtonDel: Button
+
 
         init {
             Judul = itemView.findViewById(R.id.judul)
@@ -45,9 +42,8 @@ RecyclerView.Adapter<Adapter.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val v:View = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_buku,
-        parent,false)
-        return ViewHolder(v)
+        val binding = ListBukuBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return ViewHolder(binding)
 
     }
 
@@ -59,6 +55,7 @@ RecyclerView.Adapter<Adapter.ViewHolder>() {
         val Author: String? = list_book.get(position).author
         val Tahun: String? = list_book.get(position).tahun
         val Harga: String? = list_book.get(position).harga
+
 
         holder.Judul.text = "$Judul"
         holder.Author.text = "$Author"

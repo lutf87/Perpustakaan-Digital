@@ -37,7 +37,8 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="2.5"
-            android:src="@drawable/books"/>
+            android:src="@drawable/books"
+            android:contentDescription="@string/iv_logo"/>
 
         </LinearLayout>
 
@@ -52,7 +53,7 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_judul"
-                android:text="Judul"
+                android:text="@string/ed_judul"
                 android:textSize="16sp"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
@@ -62,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_author"
                 android:layout_marginTop="8dp"
-                android:text="Author"
+                android:text="@string/ed_author"
                 android:textSize="16sp"
                 android:textColor="@color/white"
                 android:textStyle="bold"/>
@@ -73,7 +74,7 @@
                 android:id="@+id/tv_tahun"
                 android:layout_marginTop="8dp"
                 android:textColor="@color/white"
-                android:text="Tahun Terbit"
+                android:text="@string/ed_tahun"
                 android:textSize="16sp"
                 android:textStyle="bold"/>
 
@@ -82,12 +83,14 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_harga"
                 android:layout_marginTop="8dp"
-                android:text="Harga"
+                android:text="@string/ed_harga"
                 android:textSize="16sp"
                 android:textColor="@color/white"
                 android:textStyle="bold"/>
 
         </LinearLayout>
+
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -98,22 +101,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=":"
+                android:text="@string/colon"
                 android:textColor="@color/white"
                 android:textSize="16sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=":"
-                android:textColor="@color/white"
-                android:layout_marginTop="8dp"
-                android:textSize="16sp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=":"
+                android:text="@string/colon"
                 android:textColor="@color/white"
                 android:layout_marginTop="8dp"
                 android:textSize="16sp"/>
@@ -121,7 +116,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=":"
+                android:text="@string/colon"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/colon"
                 android:textColor="@color/white"
                 android:layout_marginTop="8dp"
                 android:textSize="16sp"/>
@@ -184,15 +187,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#28EC1A"
-                    android:text="Update" />
+                    android:text="@string/btn_update" />
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Delete"
+                    android:text="@string/btn_delete"
                     android:layout_marginStart="15dp"
                     android:id="@+id/btn_delete"
                     android:backgroundTint="#FF2424"
-                    android:layout_toRightOf="@id/btn_update"/>
+                    android:layout_toEndOf="@id/btn_update"/>
 
             </RelativeLayout>
 
